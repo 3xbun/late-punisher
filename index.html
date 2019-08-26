@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SMO 62 / Time Cal</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>
+          โปรแกรม <br />
+          คำนวณค่ามาสาย
+        </h1>
+        <p>ใส่เวลาให้ครบ 4 เลขโดยมี ":" คั่น ตัวอย่าง 09:00, 10:05, 08:30</p>
+      </div>
+
+      <form>
+        <div class="box">เวลานัด: <input type="text" id="meeting" /></div>
+        <div class="box">เวลามา: <input type="text" id="arrive" /></div>
+
+        <a class="button" onclick="calculation(); return false;" href="#">
+          คำนวณ
+        </a>
+
+        <h1>
+          ค่าปรับ
+          <div class="cost" id="fine"></div>
+        </h1>
+      </form>
+    </div>
+
+    <!-- <div class="rule">
+      <p>วิธีคิดค่ามาสาย</p>
+    </div> -->
+  </body>
+</html>
