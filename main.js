@@ -35,8 +35,15 @@ const calculation = () => {
     if (minute <= 30 && hour == 0) {
       fine += minute;
     } else {
-      minute = 0;
-      hour += 1;
+      if (hour < 0) {
+        minute = 0;
+        hour += 1;
+      } else if (hour > 0) {
+        if (minute > 0) {
+          minute = 0;
+          hour += 1;
+        }
+      }
       fine = hour * 100;
     }
 
